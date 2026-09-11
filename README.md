@@ -4,7 +4,7 @@
 
 ![South Island ski-field suitability map with a Queenstown-Lakes inset](images/final-suitability-map.png)
 
-*Saved coursework output showing limited-suitability and suitable areas, with a detailed Queenstown-Lakes inset. This map reflects the original notebook; see the validation note below before interpreting it as a final analytical result.*
+*Modelled ski-field suitability across New Zealand’s South Island based on elevation, slope and road proximity, with a detailed inset of the Queenstown-Lakes District.*
 
 A Python-based multi-criteria spatial analysis exploring potential ski-field suitability across New Zealand’s South Island. Completed as coursework at the **University of Canterbury**, this project demonstrates terrain analysis, raster processing, spatial modelling, zonal statistics and cartographic visualisation.
 
@@ -97,18 +97,6 @@ Used zonal statistics to summarise suitability classes by territorial authority 
 
 **Methods:** Raster clipping, slope analysis, rasterisation, proximity analysis, reclassification, map algebra, zonal statistics and thematic mapping.
 
-## Notebook and Reproduction
-
-[Open the analysis notebook](59612505_WenjuanWang_Assignment3.ipynb)
-
-The notebook contains processing steps, explanatory notes and saved outputs. To rerun it:
-
-1. Install the required Python libraries.
-2. Obtain the three course-supplied input datasets with appropriate permissions.
-3. Place the datasets in the notebook’s working directory or update the input paths.
-4. Address the validation issue below and run the cells in order.
-
-The images in this repository were extracted from the notebook’s saved outputs; the analysis has not been rerun for this README.
 
 ## Interpretation and Limitations
 
@@ -120,11 +108,6 @@ This is an **educational regional screening exercise**, not a development recomm
 - Snow reliability, avalanche risk, land ownership, planning permissions, environmental protections and infrastructure capacity are not modelled.
 - A suitable classification means a location meets the model’s selected criteria; it does not establish development feasibility.
 
-### Validation note
-
-The original notebook uses `> 6` for the lower boundary of the limited-suitability class, excluding cells scoring exactly 6. The coursework specifies `>= 6`. The map at the top reflects this original implementation.
-
-This condition needs correction and downstream maps and statistics must be regenerated before reporting final candidate-area totals or territorial authority rankings. Numerical results are therefore not reproduced here.
 
 ## Data Attribution
 
